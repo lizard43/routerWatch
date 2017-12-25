@@ -26,7 +26,7 @@ It will overwrite this file at each Pi reboot. If your SD card is low on space, 
 
 I'm using a cheap relay from eBay to rest the routers power. I'm tapping into the router's 12v power line so I'm not worried about mains power.
 
-| Relay Pin | Pi Pin | Wire Color |
+| Relay Pin | Pi Pin | Wire Color in my diagram above |
 | --- | --- | --- |
 | VDC | Pin 1 - 3V | Red |
 | GND | Pin 6 - GND | Black |
@@ -37,7 +37,7 @@ I'm using a cheap relay from eBay to rest the routers power. I'm tapping into th
 
 I cut into the power supply's positive line and that is what will be toggled by the normally closed relay. I chose normally closed rather than normally open so that when the Pi is turned off, the relay will be closed and the router will act as if nothing was in the loop.
 
-| Relay Pin | Power | Wire Color |
+| Relay Pin | Power | Wire Color in my diagram above |
 | --- | --- | --- |
 | NC - Top | Positive from Plug | Red |
 | Cmn - Center | Postive to Router | Red |
