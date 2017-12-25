@@ -1,10 +1,10 @@
-#Router reboot with Raspberry Pi and Python.
+# Router reboot with Raspberry Pi and Python.
 
 My Westell DSL router locks up several times a day. Frontier customer service isn't very helpful and they end up just sending me a new router instead of helping. I now have 4 routers and all behave the same. If I pull the power plug for 10 seconds, the router reboots and then I have intenet access for a few more hours until it hangs yet again.
 
 My solution is now to use a cheap Rasperry Pi and a relay. The Pi runs a Python script that watches for internet connectivity to drop. The Pi will toggle the normally closed relay for 10 seconds (which cuts power to the router). 
 
-| <img src="https://github.com/lizard43/routerWatch/blob/master/images/beast.png" width="800" /> |
+| <img src="https://github.com/lizard43/routerWatch/blob/master/images/beast.png" width="600" /> |
 |-|
 
 These Python scripts and approach are based on work by others:
@@ -12,8 +12,9 @@ These Python scripts and approach are based on work by others:
 - https://github.com/dough10/rebooter
 
 Clone this repo onto your Raspberry Pi. I'm using an older Pi 2 because I don't need a faster Pi 3 but I do want a CAT 5 wire into my router.
+- git clone https://github.com/lizard43/routerWatch.git
 
-Edit the crontab so that the script runs at reboot
+Edit the Pi's crontab so that the main Python script runs at reboot:
 - crontab -e
 - @reboot /home/pi/routerWatch/routerWatch.sh
 
