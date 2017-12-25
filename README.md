@@ -41,5 +41,5 @@ I cut into the power supply's positive line and that is what will be toggled by 
 
 FYI - This is the difference between a normally open relay and normally closed:
 
-| <img src="https://github.com/lizard43/routerWatch/blob/master/images/relay.jpg" width="800" /> |
+| <img src="https://github.com/lizard43/routerWatch/blob/master/images/relay.jpg" width="600" /> |
 |-|
