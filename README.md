@@ -22,9 +22,9 @@ Edit the Pi's crontab so that the main Python script runs at reboot:
 - ctrl-x to exit editor
 
 The routerWatch.sh file writes log messages to /tmp/routerWatch.txt 
-It will overwrite this file at each Pi reboot. If your SD card is low on space, this file could grow unbounded.
+It will overwrite this file at each Pi reboot. This file will grow unbounded until Pi reboot, so if your SD card is low on space, beware.
 
-I'm using a cheap relay from eBay to rest the routers power. I'm tapping into the router's 12v power line so I'm not worried about mains power.
+I'm using a cheap relay from eBay to reset the routers power. I'm tapping into the router's 12v power line so I'm not worried about mains power.
 
 | Relay Pin | Pi Pin | Wire Color in my diagram above |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ I cut into the power supply's positive line and that is what will be toggled by 
 | Relay Pin | Power | Wire Color in my diagram above |
 | --- | --- | --- |
 | NC - Top | Positive from Plug | Red |
-| Cmn - Center | Postive to Router | Red |
+| Cmn - Center | Positive to Router | Red |
 
 FYI - This is the difference between a normally open relay and normally closed:
 
