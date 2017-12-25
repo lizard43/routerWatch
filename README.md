@@ -18,8 +18,8 @@ Edit the Pi's crontab so that the main Python script runs at reboot:
 - crontab -e
 - at bottom, add this line:
     - @reboot /home/pi/routerWatch/routerWatch.sh
-- ctrl-O to write file and press enter
-- ctrl-X to exit editor
+- ctrl-o to write file and press enter
+- ctrl-x to exit editor
 
 The routerWatch.sh file writes log messages to /tmp/routerWatch.txt 
 It will overwrite this file at each Pi reboot. If your SD card is low on space, this file could grow unbounded.
