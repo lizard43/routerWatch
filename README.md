@@ -32,7 +32,7 @@ I'm using a cheap relay from eBay to rest the routers power. I'm tapping into th
 | <img src="https://github.com/lizard43/routerWatch/blob/master/images/Raspberry-Pi-GPIO.2.png" width="800" /> |
 |-|
 
-I cut the power supply's positive line and that is what will be toggled by the Normall Closed relay. I chose normally closed rather than normally open so that when the Pi is turned off, the relay will be closed and the router will act as if nothing was in the loop.
+I cut into the power supply's positive line and that is what will be toggled by the normally closed relay. I chose normally closed rather than normally open so that when the Pi is turned off, the relay will be closed and the router will act as if nothing was in the loop.
 
 | Relay Pin | Power | Wire Color |
 | --- | --- | --- |
